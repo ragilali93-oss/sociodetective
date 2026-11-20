@@ -1,0 +1,26 @@
+/downloads/*.apk
+  Content-Type: application/vnd.android.package-archive
+  Content-Disposition: attachment; filename="SocioDetective.apk"
+  Access-Control-Allow-Origin: *
+  X-Content-Type-Options: nosniff
+
+/version.json
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: no-store, no-cache, must-revalidate
+  Access-Control-Allow-Origin: *
+
+/download.html
+  Cache-Control: no-cache, must-revalidate
+  Access-Control-Allow-Origin: *
+
+/sw.js
+  Content-Type: application/javascript; charset=utf-8
+  Cache-Control: no-store, no-cache, must-revalidate
+
+/manifest.webmanifest
+  Content-Type: application/manifest+json; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/api/*
+  Cache-Control: no-store, no-cache, must-revalidate
+  Access-Control-Allow-Origin: *

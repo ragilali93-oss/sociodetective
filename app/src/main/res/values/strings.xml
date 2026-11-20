@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SocioDetective</string>
+    <string name="location_permission_title">Izin Akses Lokasi Diperlukan</string>
+    <string name="location_permission_rationale_desc">SocioDetective membutuhkan akses lokasi akurat (GPS) atau perkiraan wilayah agar contoh fenomena stratifikasi sosial dan investigasi dapat disesuaikan dengan daerahmu.</string>
+    <string name="location_permission_permanently_denied_desc">Izin lokasi sebelumnya ditolak permanen. Kamu dapat mengaktifkannya kembali lewat Pengaturan Aplikasi atau tetap belajar dengan mengisi wilayah secara manual.</string>
+    <string name="location_permission_fine_label">Lokasi Akurat (Fine / GPS)</string>
+    <string name="location_permission_coarse_label">Perkiraan Wilayah (Coarse)</string>
+    <string name="location_permission_status_granted">Diizinkan</string>
+    <string name="location_permission_status_denied">Belum Diizinkan</string>
+    <string name="location_permission_grant_button">Izinkan Lokasi</string>
+    <string name="location_permission_open_settings_button">Buka Pengaturan</string>
+    <string name="location_permission_manual_button">Isi Daerah Manual</string>
+    <string name="location_permission_fetch_coordinates_button">Ambil Koordinat Lokasi</string>
+    <string name="location_permission_badge_desc">Ikon pemeriksaan izin lokasi</string>
+</resources>

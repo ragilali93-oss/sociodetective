@@ -1,0 +1,6 @@
+{
+  "name": "SocioDetective",
+  "description": "Media pembelajaran Sosiologi interaktif tentang Stratifikasi Sosial untuk peserta didik SMA/MA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

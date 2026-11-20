@@ -1,0 +1,11 @@
+{
+  "appName": "SocioDetective",
+  "packageId": "com.aistudio.sociodetective.xqvrkm",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "minSupportedVersionCode": 1,
+  "apkUrl": "https://sociodetective.pages.dev/downloads/SocioDetective.apk",
+  "downloadPageUrl": "https://sociodetective.pages.dev/download.html",
+  "updatedAt": "2026-11-20",
+  "releaseNotes": "Rilis awal SocioDetective Android & PWA: Materi Sosiologi Kontekstual NTB (10 Kab/Kota), Detective Game (Pemula/Menengah/Ahli), Investigasi Sosial, Kuis Guru (5 tipe soal + Nilai Esai), dan Musik Detektif."
+}

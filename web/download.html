@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0F2454" />
+  <meta name="description" content="Unduh aplikasi Android SocioDetective (APK) atau jalankan versi Web/PWA untuk belajar Sosiologi Stratifikasi Sosial NTB." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Unduh SocioDetective – Aplikasi Sosiologi NTB" />
+  <meta property="og:description" content="Aplikasi pembelajaran Sosiologi interaktif (APK Android & Web PWA): Materi NTB, Detective Game, Investigasi Sosial, dan Kuis Guru." />
+  <meta property="og:url" content="https://sociodetective.pages.dev/download.html" />
+  <meta property="og:image" content="https://sociodetective.pages.dev/icons/icon-512.png" />
+  <link rel="canonical" href="https://sociodetective.pages.dev/download.html" />
+  <title>Unduh SocioDetective Android (APK) &amp; Web PWA</title>
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+      background: linear-gradient(155deg, #0c2249 0%, #13358c 55%, #1e40af 100%);
+      color: #0f172a;
+      min-height: 100vh;
+      padding: 20px 16px 40px;
+    }
+    .container { max-width: 780px; margin: 0 auto; }
+    .hero-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 28px 24px;
+      box-shadow: 0 20px 48px rgba(7, 17, 42, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .brand-top {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .app-icon {
+      width: 78px;
+      height: 78px;
+      border-radius: 20px;
+      box-shadow: 0 10px 24px rgba(15, 36, 84, 0.25);
+      border: 2px solid #bfdbfe;
+      object-fit: cover;
+      background: #0c2249;
+    }
+    .badge {
+      display: inline-block;
+      background: #fef9c3;
+      color: #854d0e;
+      border: 1px solid #facc15;
+      font-weight: 800;
+      font-size: 0.74rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 6px;
+    }
+    h1 { font-size: 1.75rem; color: #0f2454; line-height: 1.2; }
+    .subtitle { color: #475569; font-size: 0.94rem; margin-top: 4px; }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin: 18px 0;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 14px;
+      padding: 14px;
+      font-size: 0.84rem;
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 18px 0;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 12px 20px;
+      border-radius: 14px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-apk {
+      background: #facc15;
+      color: #0f2454;
+      flex: 1 1 250px;
+      box-shadow: 0 8px 20px rgba(234, 179, 8, 0.35);
+    }
+    .btn-web {
+      background: #1d4ed8;
+      color: #ffffff;
+      flex: 1 1 220px;
+    }
+    .btn-outline {
+      background: #ffffff;
+      color: #0f2454;
+      border: 1.5px solid #cbd5e1;
+      flex: 1 1 180px;
+    }
+    .alert-box {
+      border-radius: 14px;
+      padding: 12px 14px;
+      font-size: 0.85rem;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .alert-warn { background: #fef3c7; border: 1px solid #f59e0b; color: #78350f; }
+    .alert-info { background: #eff6ff; border: 1px solid #93c5fd; color: #1e3a8a; }
+    .section {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid #e2e8f0;
+    }
+    .section h2 { font-size: 1.12rem; color: #0f2454; margin-bottom: 10px; }
+    ol, ul { padding-left: 20px; display: flex; flex-direction: column; gap: 7px; font-size: 0.89rem; color: #334155; }
+    code { background: #f1f5f9; padding: 2px 6px; border-radius: 6px; font-size: 0.82rem; }
+    footer {
+      text-align: center;
+      color: #bfdbfe;
+      font-size: 0.8rem;
+      margin-top: 20px;
+    }
+    .btn[aria-disabled="true"] {
+      opacity: 0.62;
+      cursor: not-allowed;
+    }
+    @media (max-width: 520px) {
+      body { padding: 14px 12px 32px; }
+      .hero-card { padding: 20px 16px; border-radius: 18px; }
+      h1 { font-size: 1.45rem; }
+      .app-icon { width: 64px; height: 64px; border-radius: 16px; }
+      .meta-grid { grid-template-columns: 1fr 1fr; padding: 12px; gap: 8px; }
+      .btn { width: 100%; flex: 1 1 100%; font-size: 0.92rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero-card">
+      <div class="brand-top">
+        <img class="app-icon" src="./icons/icon-192.png" alt="Ikon Aplikasi SocioDetective" />
+        <div>
+          <span class="badge">🕵️ APLIKASI PEMBELAJARAN SOSIOLOGI NTB</span>
+          <h1>SocioDetective</h1>
+          <p class="subtitle">Aplikasi pembelajaran Sosiologi interaktif tentang Stratifikasi Sosial untuk belajar konsep, menyelesaikan misi detektif, dan melakukan investigasi sosial.</p>
+        </div>
+      </div>
+
+      <div class="meta-grid">
+        <div><strong>Versi Aplikasi:</strong><br><span id="ver-name">v1.0 (Build 1)</span></div>
+        <div><strong>Ukuran File APK:</strong><br><span id="apk-size">Memeriksa...</span></div>
+        <div><strong>Package ID:</strong><br><code id="pkg-id">com.aistudio.sociodetective.xqvrkm</code></div>
+        <div><strong>Diperbarui:</strong><br><span id="ver-date">2026-11-20</span></div>
+      </div>
+
+      <div id="apk-status-notice" class="alert-box alert-info">
+        Memeriksa status ketersediaan file <code>SocioDetective.apk</code> pada server...
+      </div>
+
+      <div id="apk-maintenance-card" class="alert-box alert-warn" style="display:none; padding:16px; border-width:1.5px;">
+        <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+          <div>
+            <div style="font-size:1.02rem; font-weight:800; color:#78350f;">🛠️ Aplikasi sedang dalam pemeliharaan</div>
+            <p id="apk-maintenance-desc" style="margin-top:6px; font-size:0.86rem; color:#78350f;">
+              File instalasi Android (<code>SocioDetective.apk</code>) belum terunggah atau sedang diperbarui di server. Unduhan APK dinonaktifkan sementara agar pengguna tidak mengunduh berkas rusak. Silakan gunakan <strong>Versi Web / PWA</strong> di bawah ini.
+            </p>
+          </div>
+          <button type="button" class="btn btn-outline" style="flex:0 0 auto; min-height:40px; padding:8px 14px; font-size:0.84rem;" onclick="loadVersionMetadata()">
+            🔄 Periksa Ulang Status
+          </button>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <a id="btn-download-apk" class="btn btn-apk" href="./downloads/SocioDetective.apk" download="SocioDetective.apk" style="display:none;">
+          ⬇️ Download APK Android
+        </a>
+        <a class="btn btn-web" href="./index.html">
+          🌐 Buka Versi Web / PWA
+        </a>
+        <button id="btn-install-pwa" type="button" class="btn btn-outline" style="display:none;" onclick="installPwaNow()">
+          📲 Pasang PWA ke Layar HP
+        </button>
+        <button type="button" class="btn btn-outline" onclick="shareThisPortal()">
+          📤 Bagikan Link
+        </button>
+        <button type="button" class="btn btn-outline" onclick="copyPortalLink()">
+          📋 Salin Link
+        </button>
+        <button type="button" class="btn btn-outline" onclick="sharePortalWhatsApp()">
+          💬 WhatsApp
+        </button>
+      </div>
+
+      <div id="release-notes-box" style="font-size:0.86rem; color:#334155; background:#f8fafc; border-radius:12px; padding:12px 14px; border:1px solid #e2e8f0; margin-bottom:14px;">
+        <strong>Catatan Rilis:</strong> <span id="ver-notes">Rilis SocioDetective Android &amp; PWA.</span>
+      </div>
+
+      <div class="alert-box alert-warn">
+        ⚠️ <strong>Peringatan Keamanan:</strong> Hanya unduh dan pasang file <strong>SocioDetective.apk</strong> dari tautan HTTPS resmi SocioDetective yang dibagikan oleh Guru atau pengelola sekolah Anda. Jangan memasang file dari sumber atau tautan asing yang tidak terverifikasi.
+      </div>
+
+      <div class="section">
+        <h2>📱 Panduan Pemasangan APK di HP Android (Tanpa Play Store)</h2>
+        <ol>
+          <li>Ketuk tombol <strong>"Download Aplikasi (SocioDetective.apk)"</strong> di atas melalui browser HP Android Anda (disarankan Google Chrome).</li>
+          <li>Tunggu hingga file <code>SocioDetective.apk</code> selesai diunduh, lalu ketuk file tersebut dari notifikasi unduhan atau folder <strong>Download / File Saya</strong>.</li>
+          <li>Jika muncul peringatan Android berbunyi <em>"Demi keamanan, ponsel Anda tidak diizinkan menginstal aplikasi tidak dikenal dari sumber ini"</em>, ketuk <strong>Setelan (Settings)</strong>.</li>
+          <li>Aktifkan sakelar <strong>"Izinkan dari sumber ini"</strong> pada Chrome atau Pengelola File, lalu tekan tombol kembali.</li>
+          <li>Ketuk <strong>Instal / Pasang</strong> dan tunggu beberapa detik hingga selesai.</li>
+          <li>Ikon <strong>SocioDetective</strong> akan muncul di layar utama HP Anda dan dapat dijalankan layaknya aplikasi Android lainnya.</li>
+        </ol>
+      </div>
+
+      <div class="section">
+        <h2>🔄 Panduan Pembaruan Aplikasi Tanpa Menghapus Data</h2>
+        <ul>
+          <li>Saat versi baru dirilis, buka kembali tautan ini atau gunakan tombol <strong>Bagikan &amp; Cek Update</strong> di dalam aplikasi.</li>
+          <li>Unduh dan pasang file <code>SocioDetective.apk</code> terbaru langsung menimpa versi lama (jangan <em>uninstall</em> aplikasi lama terlebih dahulu agar akun, kelas, dan progres belajar tetap tersimpan).</li>
+          <li>Untuk keamanan ekstra, Anda juga dapat mengekspor cadangan JSON di menu <strong>Bagikan &amp; Cek Update → Cadangan &amp; Hosting</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      SocioDetective • Pendidikan Sosiologi SMA/MA NTB • © 2026 Kelompok 2
+    </footer>
+  </div>
+
+  <script>
+    let deferredPrompt = null;
+
+    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+      navigator.serviceWorker.register('./sw.js').catch(() => {});
+    }
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      const btn = document.getElementById('btn-install-pwa');
+      if (btn) btn.style.display = 'inline-flex';
+    });
+
+    function installPwaNow() {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.finally(() => {
+        deferredPrompt = null;
+        const btn = document.getElementById('btn-install-pwa');
+        if (btn) btn.style.display = 'none';
+      });
+    }
+
+    const CANONICAL_PORTAL_URL = 'https://sociodetective.pages.dev/download.html';
+
+    function getShareablePortalUrl() {
+      if (window.location.protocol === 'https:') {
+        return `${window.location.origin}${window.location.pathname}`;
+      }
+      return CANONICAL_PORTAL_URL;
+    }
+
+    function buildPortalShareText() {
+      const url = getShareablePortalUrl();
+      return `Yuk, gunakan SocioDetective! Aplikasi pembelajaran Sosiologi interaktif untuk belajar, menyelesaikan misi detektif, dan melakukan investigasi sosial.\n\nDownload aplikasi di sini:\n${url}`;
+    }
+
+    function shareThisPortal() {
+      const url = getShareablePortalUrl();
+      const text = buildPortalShareText();
+      if (navigator.share) {
+        navigator.share({ title: 'Unduh SocioDetective', text, url }).catch(() => {});
+      } else {
+        copyPortalLink();
+      }
+    }
+
+    function copyPortalLink() {
+      const url = getShareablePortalUrl();
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(() => alert('Tautan halaman unduhan disalin ke clipboard:\n' + url));
+      } else {
+        prompt('Salin tautan resmi berikut:', url);
+      }
+    }
+
+    function sharePortalWhatsApp() {
+      const text = buildPortalShareText();
+      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+    }
+
+    function formatApkBytes(bytes) {
+      const n = Number(bytes);
+      if (!n || n <= 0) return 'Tersedia di server';
+      return `${(n / (1024 * 1024)).toFixed(2)} MB`;
+    }
+
+    function resolveApkCheckUrl(rawApkUrl) {
+      if (!rawApkUrl) return './downloads/SocioDetective.apk';
+      try {
+        const parsed = new URL(rawApkUrl, window.location.href);
+        if (
+          parsed.origin !== window.location.origin &&
+          parsed.pathname.endsWith('/downloads/SocioDetective.apk') &&
+          (window.location.hostname === 'localhost' ||
+            window.location.hostname === '127.0.0.1' ||
+            window.location.hostname.endsWith('.pages.dev'))
+        ) {
+          return './downloads/SocioDetective.apk';
+        }
+        return parsed.toString();
+      } catch (e) {
+        return './downloads/SocioDetective.apk';
+      }
+    }
+
+    async function verifyApkStatusOnServer(targetApkUrl) {
+      // 1. Prioritaskan verifikasi endpoint backend/Cloudflare Pages Functions (/api/apk-status)
+      try {
+        const apiRes = await fetch(`./api/apk-status?t=${Date.now()}`, { cache: 'no-store' });
+        const apiType = (apiRes.headers.get('content-type') || '').toLowerCase();
+        if (apiRes.ok && apiType.includes('application/json')) {
+          const payload = await apiRes.json();
+          if (typeof payload.available === 'boolean') {
+            return {
+              verified: true,
+              available: payload.available,
+              status: payload.status || (payload.available ? 'ready' : 'maintenance'),
+              fileSizeBytes: Number(payload.fileSizeBytes || 0),
+              httpStatus: Number(payload.httpStatus || (payload.available ? 200 : 404)),
+              apkUrl: payload.apkUrl || targetApkUrl,
+              message: payload.message || '',
+              source: 'backend_api'
+            };
+          }
+        }
+      } catch (e) {
+        // Lanjut ke verifikasi HEAD langsung jika hosting statis murni tanpa /api/apk-status
+      }
+
+      // 2. Fallback: verifikasi HEAD langsung ke file APK pada server hosting
+      try {
+        const headRes = await fetch(`${targetApkUrl}${targetApkUrl.includes('?') ? '&' : '?'}t=${Date.now()}`, {
+          method: 'HEAD',
+          cache: 'no-store'
+        });
+        const contentType = (headRes.headers.get('content-type') || '').toLowerCase();
+        const fileSizeBytes = Number(headRes.headers.get('content-length') || 0);
+        const isHtmlFallback = contentType.includes('text/html');
+        const available = headRes.ok && !isHtmlFallback && (fileSizeBytes > 0 || contentType.includes('android.package-archive') || contentType.includes('octet-stream'));
+        return {
+          verified: true,
+          available,
+          status: available ? 'ready' : 'maintenance',
+          fileSizeBytes: available ? fileSizeBytes : 0,
+          httpStatus: headRes.status,
+          apkUrl: targetApkUrl,
+          message: available ? 'File SocioDetective.apk tersedia dan siap diunduh.' : 'Aplikasi sedang dalam pemeliharaan',
+          source: 'direct_head'
+        };
+      } catch (err) {
+        return {
+          verified: false,
+          available: false,
+          status: 'maintenance',
+          fileSizeBytes: 0,
+          httpStatus: 0,
+          apkUrl: targetApkUrl,
+          message: 'Aplikasi sedang dalam pemeliharaan',
+          source: 'network_error'
+        };
+      }
+    }
+
+    function applyApkAvailabilityUi(result, versionInfo) {
+      const notice = document.getElementById('apk-status-notice');
+      const maintenanceCard = document.getElementById('apk-maintenance-card');
+      const maintenanceDesc = document.getElementById('apk-maintenance-desc');
+      const apkBtn = document.getElementById('btn-download-apk');
+      const sizeEl = document.getElementById('apk-size');
+
+      if (result.available) {
+        const sizeStr = formatApkBytes(result.fileSizeBytes);
+        if (sizeEl) sizeEl.textContent = sizeStr;
+        if (maintenanceCard) maintenanceCard.style.display = 'none';
+        if (apkBtn) {
+          apkBtn.href = result.apkUrl;
+          apkBtn.style.display = 'inline-flex';
+          apkBtn.removeAttribute('aria-disabled');
+          apkBtn.onclick = null;
+        }
+        if (notice) {
+          notice.className = 'alert-box alert-info';
+          notice.innerHTML = `✅ <strong>Siap Diunduh:</strong> File <code>SocioDetective.apk</code> (v${versionInfo.versionName} • ${sizeStr}) tersedia dan terverifikasi di server.`;
+        }
+      } else {
+        if (sizeEl) sizeEl.textContent = 'Dalam pemeliharaan';
+        if (apkBtn) {
+          apkBtn.style.display = 'none';
+          apkBtn.removeAttribute('href');
+        }
+        if (maintenanceCard) maintenanceCard.style.display = 'block';
+        if (maintenanceDesc) {
+          maintenanceDesc.innerHTML = `File instalasi Android (<code>SocioDetective.apk</code>) belum terunggah atau sedang diperbarui di server (Status: <code>HTTP ${result.httpStatus || 404}</code>). Tombol unduh APK dinonaktifkan sementara agar pengguna tidak mengunduh berkas rusak. Silakan gunakan <strong>Versi Web / PWA</strong> di bawah ini.`;
+        }
+        if (notice) {
+          notice.className = 'alert-box alert-warn';
+          notice.innerHTML = `🛠️ <strong>Status Server:</strong> Aplikasi sedang dalam pemeliharaan (file <code>SocioDetective.apk</code> belum tersedia untuk diunduh).`;
+        }
+      }
+    }
+
+    async function loadVersionMetadata() {
+      const notice = document.getElementById('apk-status-notice');
+      const maintenanceCard = document.getElementById('apk-maintenance-card');
+      const apkBtn = document.getElementById('btn-download-apk');
+      const sizeEl = document.getElementById('apk-size');
+      if (apkBtn) apkBtn.style.display = 'none';
+      if (maintenanceCard) maintenanceCard.style.display = 'none';
+      if (sizeEl) sizeEl.textContent = 'Memeriksa...';
+      if (notice) {
+        notice.className = 'alert-box alert-info';
+        notice.innerHTML = 'Memeriksa status ketersediaan file <code>SocioDetective.apk</code> pada server...';
+      }
+
+      try {
+        const res = await fetch(`./version.json?t=${Date.now()}`, { cache: 'no-store' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const v = await res.json();
+        document.getElementById('ver-name').textContent = `v${v.versionName} (Build ${v.versionCode})`;
+        document.getElementById('pkg-id').textContent = v.packageId || 'com.aistudio.sociodetective.xqvrkm';
+        document.getElementById('ver-date').textContent = v.updatedAt || '-';
+        document.getElementById('ver-notes').textContent = v.releaseNotes || '-';
+
+        const targetApkUrl = resolveApkCheckUrl(v.apkUrl);
+        const statusResult = await verifyApkStatusOnServer(targetApkUrl);
+        applyApkAvailabilityUi(statusResult, v);
+      } catch (e) {
+        applyApkAvailabilityUi(
+          { available: false, status: 'maintenance', httpStatus: 503, fileSizeBytes: 0, apkUrl: '' },
+          { versionName: '1.0' }
+        );
+      }
+    }
+    loadVersionMetadata();
+  </script>
+</body>
+</html>

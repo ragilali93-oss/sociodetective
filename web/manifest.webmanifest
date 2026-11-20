@@ -1,0 +1,33 @@
+{
+  "name": "SocioDetective – Stratifikasi Sosial",
+  "short_name": "SocioDetective",
+  "description": "Aplikasi pembelajaran Sosiologi interaktif tentang Stratifikasi Sosial berbasis investigasi kasus dan detektif sosial untuk SMA/MA.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0C2249",
+  "theme_color": "#0F2454",
+  "lang": "id",
+  "categories": ["education"],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
