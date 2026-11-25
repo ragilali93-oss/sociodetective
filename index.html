@@ -6516,15 +6516,12 @@
 
       if (role === 'guru') {
         if (!selectedSchool) {
-          showToast('Guru wajib memilih sekolah terverifikasi di wilayah Provinsi NTB.', 'error');
-          return;
+           showToast('Guru wajib memilih sekolah terverifikasi di wilayah Provinsi NTB.', 'error');
+            return;
         }
         schoolId = selectedSchool.id;
         subject = document.getElementById('reg-guru-subject')?.value.trim() || 'Sosiologi';
-        const inviteInput = (document.getElementById('reg-invite-code')?.value || '').trim().toUpperCase();
-        const inviteObj = getTeacherInvites().find(iv => iv.code.toUpperCase() === inviteInput && iv.active);
-       approvalStatus = 'approved';
-        }
+        approvalStatus = 'approved';
       } else if (!selectedSchool) {
         schoolId = '';
       }
