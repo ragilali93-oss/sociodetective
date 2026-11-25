@@ -2687,7 +2687,7 @@
               </div>
               <div class="role-option">
                 <input type="radio" name="reg-role" id="role-guru" value="guru" onchange="toggleRegisterRoleFields()" />
-                <label for="role-guru">👩‍🏫 Guru (Perlu Persetujuan)</label>
+                <label for="role-guru">👩‍🏫 Guru)</label>
               </div>
             </div>
           </div>
@@ -6524,10 +6524,7 @@
         subject = document.getElementById('reg-guru-subject')?.value.trim() || 'Sosiologi';
         const inviteInput = (document.getElementById('reg-invite-code')?.value || '').trim().toUpperCase();
         const inviteObj = getTeacherInvites().find(iv => iv.code.toUpperCase() === inviteInput && iv.active);
-        if (inviteObj && inviteObj.schoolId === schoolId) {
-          approvalStatus = 'approved';
-        } else {
-          approvalStatus = 'pending_superadmin';
+       approvalStatus = 'approved';
         }
       } else if (!selectedSchool) {
         schoolId = '';
