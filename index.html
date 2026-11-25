@@ -6441,9 +6441,6 @@
         showToast('Akun belum aktif. Selesaikan verifikasi email terlebih dahulu.', 'error');
         return;
       }
-      if (found.role === 'guru' && found.approvalStatus !== 'approved') {
-        showToast('Akun Guru masih menunggu persetujuan Super Admin.', 'error');
-        return;
       }
       startSession(found);
       showToast(`Selamat datang kembali, ${found.fullname}!`, 'success');
